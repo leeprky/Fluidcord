@@ -1,0 +1,9 @@
+{
+    "name": "Fluidcord",
+    "description": "Fluidcord - Support discord.gg/YEGJ8yY2KF",
+    "version": "0.1",
+    "author": "Leeprky#2063",
+    "splashTheme": "splash.css",
+    "license": "MIT",
+    "theme": "Fluidcord-config.css"
+}
