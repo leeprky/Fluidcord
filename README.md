@@ -1,9 +1,9 @@
-# SLOOK (REMASTERED)
-A Discord Theme Based **Around The Chat**, Making it more appealing.
+# Fluidcord
+Fluidcord
 
-![preview](https://raw.githubusercontent.com/leeprky/Lode/main/default/images/PreviewEdit.jpg)
+![preview]()
 
-## How To Install SLOOK Remastered?
+## How To Install Fluidcord?
 
 Its Simple!
 
@@ -12,7 +12,7 @@ For **Powercord** Users:
 1. Open CMD & Type:
 
 ```
-cd powercord/src/Powercord/themes && git clone https://github.com/leeprky/Slook-Remastered
+cd powercord/src/Powercord/themes && git clone https://github.com/leeprky/Fluidcord
 ```
 
 For **Betterdiscord** Users:
@@ -28,8 +28,6 @@ For **Goosemod** Users:
 
 Thank you for checking out/downloading my Theme :)
 Direct Message Me On @Discord Or Join By **[github.com/leeprky](https://discord.gg/Ff3rqAYB89)** For More Help/Information For Installing/Support. Enjoy :)
-
-Thanks For The Overwhelming Support On SLOOK V2 :)
 
 ## Previews
 
