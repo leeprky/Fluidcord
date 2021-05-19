@@ -1,12 +1,10 @@
 /*  ------------------------------------------
                Fluidcord (POWERCORD)
-                      v0.2
+                      v0.3
                 - leeprky#2063 -
     ------------------------------------------  */
 
 @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
-@import url(https://leeprky.github.io/themes/FullyThemedDiscord/FullyThemedDiscord.css);
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
 
 /*  ----------------------------
@@ -27,24 +25,9 @@ body{
 	border-radius: 10px 10px 10px 10px; 
 	border-color: transparent;
 }
-#app-mount .guilds-1SWlCJ .scrollerBase-289Jih {
-  background: #fbfbfcde;
-}
 .sidebar-2K8pFh {
   filter: opacity(75%)
 }
-
-.theme-dark {
-  --background-primary: #ffffff !important;
-  --background-primary-alt: #ffffff!important;
-  --background-secondary: #ffffff !important;
-  --background-secondary-alt: #f8f8f8 !important;
-  --background-tertiary: #ffffff00 !important;
-  --background-accent: #2f6cce !important;
-  --background-floating: #e2e5ee !important;
-  --serverlist-background: var(--background-tertiary) !important;
-  --memberlist-background: #ffffff00 !important;
-};
 
 .platform-osx .container-1r6BKw {
   -webkit-app-region: none;
@@ -120,107 +103,226 @@ USRBG Profile Modals by Tropix126.
 USRBG Popouts by Tropix126.
 =========================================== */
 
-.theme-dark {
+.theme-dark, .theme-light {
+  --text-warning: #faa61a;
+  --text-danger: #ed4245;
 
-  /* Quarrel */
+  --info-positive-background: rgba(59,165,92,0.1);
+  --info-positive-foreground: #3ba55c;
+  --info-warning-background: rgba(250,166,26,0.1);
+  --info-warning-foreground: #faa61a;
+  --info-danger-background: rgba(237,66,69,0.1);
+  --info-danger-foreground: #ed4245;
 
---titlebar-top:  4px;
---icon-top: 0.5px;
---watermark-top: 5.5px;
---watermark-text: "Quarrel";
---icon-img: url("https://i.imgur.com/BlVTpku.png");
+  --status-positive-background: #3ba55c;
+  --status-positive-text: #fff;
+  --status-warning-background: #faa61a;
+  --status-danger-background: #ed4245;
 
---alt-color: 27, 94, 182; /* RGB */
---alt-color2: #1b5eb6; /* HEX */
-
---scrollbars: none; /* none or unset */
---bar-background-primary: #eaebf1;
---home-icon: url(https://i.imgur.com/Bda0DuK.png);
-  
---modal-normal-primary-color: #e4e7eefd;
---modal-normal-secondary-color: #eceff7;
---playing-color: var(--alt-color2);
---spotify-color: rgb(37, 129, 18);
---streaming-color: rgb(127, 50, 179);
-
-  /* Keeping Consistancy With Discord */ 
---serverlist-background: var(--background-tertiary);
---memberlist-background: #ebecf0;
---win-titlebar: var(--background-tertiary);
-
- /* Header Colors */
- --header-primary: rgb(5, 5, 5);
- --header-secondary: #252627;
-
- /* Text Colours */
- --text-normal: #1d1e1f;
- --text-muted: #a2a7af;
- --text-link: #00b0f4;
- --channels-default: #4f5358;
- --interactive-normal: #717377;
- --interactive-hover: #787d81;
- --interactive-active: rgb(105, 94, 94);
- --interactive-muted: #a2a6ad;
-
- /* Chat */
- --channeltextarea-background: var(--bar-background-primary);
- --channeltextarea-background-hover: var(--bar-background-primary);
-
- /* Background Colours */
- --background-primary: #191a1f;
- --background-primary-alt: #191a1f;
- --background-secondary: #191a1f;
- --background-secondary-alt: #191a1f;
- --background-tertiary: #191b22;
- --background-accent: #2f6cce;
- --background-floating: #18191c;
-
- /* Hovering Colours */
---background-modifier-hover: #225ae6;
---background-modifier-active: rgba(56, 168, 151, 0.911);
---background-modifier-selected: rgba(9, 238, 204, 0.952);
---background-modifier-accent: rgba(56, 168, 151, 0.979);
---background-message-hover: transparent;
-
- /* Mentioned  Colours */
- --background-mentioned: rgba(26, 60, 250, 0.123);
- --background-mentioned-hover: rgba(26, 60, 250, 0.103);
- --background-mentioned-bar: var(--background-accent);
-
- --background-help-warning: rgba(250,166,26,0.1);
- --background-help-info: rgba(0,176,244,0.1);
-
- /* Scrollbar Colours */
- --background-modifier-hover: rgba(67, 87, 119, 0.16);
- --background-modifier-active: rgba(66, 122, 211, 0.315);
- --background-modifier-selected: rgba(74, 96, 133, 0.32);
- --background-modifier-accent: rgba(255, 255, 255, 0.06);
- --scrollbar-auto-scrollbar-color-thumb: rgba(64, 93, 139, 0.16);
-
-/* Box Shadow On Floating Elements Colours */
---elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
---elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
---elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
---elevation-high: 0 8px 16px rgba(0,0,0,0.24);
-
---scrollbar-thin-thumb: #eaedf100;
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #e5e9ee;
-    --scrollbar-auto-track: #ebeef100;
-    --scrollbar-auto-scrollbar-color-thumb: #f0f3f8;
-    --scrollbar-auto-scrollbar-color-track: #2f313600;
-    
-/* Other */
---radio-group-dot-foreground: var(--alt-color);
+  --status-danger-text: #fff;
+  --focus-primary: #00b0f4;
 }
 
-/* Extras */
+.theme-dark {
+
+  --alt-color: 114,137,218; /* RGB */
+  --alt-color2: #6D84D1; /* HEX */
+  --modal-normal-primary-color: var(--background-secondary);
+  --modal-normal-secondary-color: var(--background-secondary);
+  --serverlist-background: var(--background-secondary);
+  --memberlist-background: var(--background-secondary);
+
+  --toast-background: #2f3136;
+  --toast-header: #202225;
+  --toast-contents: #36393f;
+  --toast-box-shadow: rgba(0, 0, 0, .2);
+  --toast-border: rgba(28, 36, 43, .6);
+  --spotify-color: #1ed860;
+  
+  --app-background: var(--background-secondary);
+
+  --header-primary: #fff;
+  --header-secondary: #b9bbbe;
+
+  --text-normal: #dcddde;
+  --text-muted: #72767d;
+  --text-link: #00b0f4;
+  --text-positive: #4fdc7b;
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #fff;
+  --interactive-muted: #4f545c;
+
+  --background-primary: #36393f;
+  --background-secondary: #2f3136b6;
+  --background-secondary-alt: #292b2fb4;
+  --background-tertiary: #20222500;
+  --background-accent: #4f545c;
+  --background-floating: #18191c;
+
+  --background-mobile-primary: #36393f;
+  --background-mobile-secondary: #2f3136;
+  --background-modifier-hover: rgba(79,84,92,0.16);
+  --background-modifier-active: rgba(79,84,92,0.24);
+  --background-modifier-selected: rgba(79,84,92,0.32);
+  --background-modifier-accent: hsla(0,0%,100%,0.06);
+
+  --info-positive-text: #fff;
+  --info-warning-text: #fff;
+  --info-danger-text: #fff;
+  --info-help-background: rgba(0,176,244,0.1);
+  --info-help-foreground: #00b0f4;
+  --info-help-text: #fff;
+  --status-warning-text: #000;
+
+  --scrollbar-thin-thumb: #202225;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #202225;
+  --scrollbar-auto-track: #2e3338;
+  --scrollbar-auto-scrollbar-color-thumb: #202225;
+  --scrollbar-auto-scrollbar-color-track: #2f3136;
+
+  --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+  --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+  --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+  --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+
+  --logo-primary: #fff;
+  --control-brand-foreground: #a5b3e7;
+
+  --background-mentioned: rgba(250,166,26,0.1);
+  --background-mentioned-hover: rgba(250,166,26,0.08);
+  --background-message-hover: rgba(4,4,5,0.07);
+
+  --channels-default: #8e9297;
+
+  --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  --channeltextarea-background: #40444b;
+
+  --activity-card-background: #202225;
+  --textbox-markdown-syntax: #8e9297;
+
+  --deprecated-card-bg: rgba(32,34,37,0.6);
+  --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+  --deprecated-store-bg: #36393f;
+
+  --deprecated-quickswitcher-input-background: #72767d;
+  --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+
+  --deprecated-text-input-bg: rgba(0,0,0,0.1);
+  --deprecated-text-input-border: rgba(0,0,0,0.3);
+  --deprecated-text-input-border-hover: #040405;
+  --deprecated-text-input-border-disabled: #202225;
+  --deprecated-text-input-prefix: #dcddde;
+}
+
+.theme-light {
+
+  --alt-color: 114,137,218; /* RGB */
+  --alt-color2: #6D84D1; /* HEX */
+  
+  --modal-normal-primary-color: var(--background-secondary);
+  --modal-normal-secondary-color: var(--background-secondary);
+  --serverlist-background: var(--background-secondary);
+  --memberlist-background: var(--background-secondary);
+
+  --toast-background: #fff;
+  --toast-header: #e3e5e8;
+  --toast-contents: #f2f3f5;
+  --toast-box-shadow: rgba(0, 0, 0, .1);
+  --toast-border: rgba(28, 36, 43, .06);
+  --spotify-color: #1ed860;
+
+  --app-background: var(--background-secondary);
+
+
+  --header-primary: #060607;
+  --header-secondary: #4f5660;
+
+  --text-normal: #2e3338;
+  --text-muted: #747f8d;
+  --text-link: #0067e0;
+  --text-positive: #3ba55c;
+
+  --interactive-normal: #4f5660;
+  --interactive-hover: #2e3338;
+  --interactive-active: #060607;
+  --interactive-muted: #c7ccd1;
+
+  --background-primary: rgba(255, 255, 255, 0.966);
+  --background-secondary: #f2f3f5ab;
+  --background-secondary-alt: #f2f3f5ab;
+  --background-tertiary: #e3e5e800;
+  --background-accent: #747f8d;
+  --background-floating: #fff;
+
+  --background-mobile-primary: #f8f9f9;
+  --background-mobile-secondary: #fff;
+  --background-modifier-hover: rgba(116,127,141,0.08);
+  --background-modifier-active: rgba(116,127,141,0.16);
+  --background-modifier-selected: rgba(116,127,141,0.24);
+  --background-modifier-accent: rgba(6,6,7,0.08);
+
+  --info-positive-text: #000;
+  --info-warning-text: #000;
+  --info-danger-text: #000;
+  --info-help-background: rgba(0,103,224,0.1);
+  --info-help-foreground: #0067e0;
+  --info-help-text: #000;
+
+  --status-warning-text: #fff;
+  --scrollbar-thin-thumb: rgba(79,84,92,0.3);
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #ccc;
+  --scrollbar-auto-track: #f2f2f2;
+  --scrollbar-auto-scrollbar-color-thumb: #e3e5e8;
+  --scrollbar-auto-scrollbar-color-track: #f2f3f5;
+
+  --elevation-stroke: 0 0 0 1px rgba(6,6,7,0.08);
+  --elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
+  --elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
+  --elevation-high: 0 8px 16px rgba(0,0,0,0.16);
+
+  --logo-primary: #7289da;
+  --control-brand-foreground: #7289da;
+
+  --background-mentioned: rgba(250,166,26,0.1);
+  --background-mentioned-hover: rgba(250,166,26,0.2);
+  --background-message-hover: rgba(6,6,7,0.02);
+
+  --channels-default: #6a7480;
+
+  --guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
+  --channeltextarea-background: #ebedef;
+
+  --activity-card-background: #fff;
+  --textbox-markdown-syntax: #6a7480;
+
+  --deprecated-card-bg: #f8f9f9;
+  --deprecated-card-editable-bg: rgba(246,246,247,0.6);
+  --deprecated-store-bg: #f8f9f9;
+
+  --deprecated-quickswitcher-input-background: #fff;
+  --deprecated-quickswitcher-input-placeholder: rgba(79,84,92,0.3);
+
+  --deprecated-text-input-bg: rgba(79,84,92,0.02);
+  --deprecated-text-input-border: rgba(79,84,92,0.3);
+  --deprecated-text-input-border-hover: #b9bbbe;
+  --deprecated-text-input-border-disabled: #dcddde;
+  --deprecated-text-input-prefix: #b9bbbe;
+}
+
 .guilds-1SWlCJ{background-color:var(--serverlist-background)}
 .members-1998pB,.members-1998pB>div{background-color:var(--memberlist-background)}
-.guilds-1SWlCJ{background-color:var(--serverlist-background-light)}
 .powercord-toast .contents{background-color:var(--toast-content)}
-.withFrame-haYltI, .titleBar-AC4pGV {margin-top: var(--titlebar-top);}
 
+.bg-h5JY_x {
+  background-color: var(--app-background);
+}
+.platform-win .sidebar-2K8pFh {
+  border-radius: 0px;
+  bottom: 10px;
+}
 
 /*  ----------------------------------------------------
                   Optional Features
@@ -238,3 +340,125 @@ USRBG Popouts by Tropix126.
                     v0.2 (Fluidcord)
     ----------------------------------------------------  */
 
+/* FluidChat */
+.markup-2BOw-j:not(.slateTextArea-1Mkdgw){
+  padding-bottom:8px;
+  padding-top:8px; 
+  padding-right:1vh !important;
+  padding-left:1vh !important;
+  border-radius: 10px;
+  white-space: pre-wrap !important;
+  box-sizing: border-box !important;
+}
+
+[data-is-author-self="true"] .avatar-1BDn8e, [data-is-author-self="true"] .headerText-3Uvj1Y   {
+  display:none;
+}
+.timestamp-3ZCmNB{
+  position:absolute;
+}
+[data-is-author-self="true"] .contents-2mQqc9, [data-is-author-self="true"] .reactions-12N0jA {
+  display: flex;
+  flex-direction: row-reverse; 
+  flex-wrap: wrap-reverse;
+}
+.theme-light [data-is-author-self="true"] .markup-2BOw-j {
+  background-color: #858585 !important;
+  color: #fafafa;
+  margin-left: 10% !important;
+}
+.theme-dark [data-is-author-self="true"] .markup-2BOw-j {
+  background-color: #f7f3f3 !important;
+  color: #3a3a3a;
+  margin-left: 10% !important;
+}
+
+[data-is-author-self="false"] .contents-2mQqc9 {
+  flex-direction: row;
+  max-width: 100% !important;
+  margin-left: 10px;
+}
+.theme-dark [data-is-author-self="false"] .markup-2BOw-j {
+  background-color: #555555 !important;
+  color: #dfdfdf;
+  margin: 0 !important;
+  margin-right: 10% !important;
+  display: inline-block;
+}
+.theme-light [data-is-author-self="false"] .markup-2BOw-j {
+  background-color: #ECECEC !important;
+  color: #414040;
+  margin: 0 !important;
+  margin-right: 10% !important;
+  display: inline-block;
+}
+
+[data-is-author-self="true"] .container-1ov-mD {
+  display: flex;
+  flex-direction: row-reverse !important; 
+}
+
+  .slateTextArea-1Mkdgw {
+  position:relative !important;
+}
+.repliedMessage-VokQwo:before {
+  display: none;
+}
+.username-1A8OIy {
+  display: none;
+}
+.avatar-1BDn8e {
+  left: 16px;
+  margin-top: calc(4px - .250rem) !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.chatContent-a9vAAp {
+  margin-left: 20px;
+}
+.cozy-3raOZG .header-23xsNx {
+  display: none;
+}
+
+/* TitleBar */
+.titleBar-AC4pGV > *:nth-child(2):hover {background-color: #b64537;}
+.titleBar-AC4pGV > *:nth-child(3):hover {background-color: #d6ac2c;}
+.titleBar-AC4pGV > *:nth-child(4):hover {background-color: #24d324;}
+.container-2lgZY8 {margin-top: 10px;}
+.wordmark-2iDDfm:after {
+  color: rgb(247, 245, 245);
+  content: "Discord";
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  width: 4000px;
+  top: 8.8px;
+  left: 11px;
+}
+.theme-light .wordmark-2iDDfm:after {color: rgb(48, 48, 48);}
+.theme-dark .wordmark-2iDDfm:after {color: rgb(247, 245, 245);}
+.wordmark-2iDDfm > svg {
+  width: 0px;
+}
+.winButton-iRh8-Z {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+  width: 32px;
+  height: 30px;
+  pointer-events: auto;
+  -webkit-app-region: no-drag;
+}
+/* Chatbox */
+.attachButton-2WznTc {
+  border: 3px;
+  border-color: #0067e0;
+  border-radius: 0px;
+  border-width: 2px;
+}
+.scrollableContainer-2NUZem, .channelTextArea-rNsIhG {
+  border-radius: 0px !important;
+  border-style: groove;
+  border-color: #1ed860;
+}
