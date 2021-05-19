@@ -1,0 +1,240 @@
+/*  ------------------------------------------
+               Fluidcord (POWERCORD)
+                      v0.2
+                - leeprky#2063 -
+    ------------------------------------------  */
+
+@import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
+@import url(https://leeprky.github.io/themes/FullyThemedDiscord/FullyThemedDiscord.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+@import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+
+/*  ----------------------------
+         GLASSCORD
+    ----------------------------  */
+
+:root{
+	--glasscord-win-blur: transparent;
+	--glasscord-macos-vibrancy: fullscreen-ui;
+	--glasscord-linux-blur: true;
+	--glasscord-titlebar: default;  
+}
+body{
+    background-color: transparent;
+}
+#app-mount{
+	background-color: rgba(2, 2, 2, 0.007);
+	border-radius: 10px 10px 10px 10px; 
+	border-color: transparent;
+}
+#app-mount .guilds-1SWlCJ .scrollerBase-289Jih {
+  background: #fbfbfcde;
+}
+.sidebar-2K8pFh {
+  filter: opacity(75%)
+}
+
+.theme-dark {
+  --background-primary: #ffffff !important;
+  --background-primary-alt: #ffffff!important;
+  --background-secondary: #ffffff !important;
+  --background-secondary-alt: #f8f8f8 !important;
+  --background-tertiary: #ffffff00 !important;
+  --background-accent: #2f6cce !important;
+  --background-floating: #e2e5ee !important;
+  --serverlist-background: var(--background-tertiary) !important;
+  --memberlist-background: #ffffff00 !important;
+};
+
+.platform-osx .container-1r6BKw {
+  -webkit-app-region: none;
+}
+
+/*  ----------------------------
+       GLASSCORD SUPPORT
+    ----------------------------  */
+
+/*  ------------------------------------------
+         Fluidcord Customisable Configuration
+                    v0.2
+               -leeprky#2063-
+    ------------------------------------------  */
+
+/*
+USRBG Profile Modals by Tropix126.
+=========================================== */
+
+@import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+
+.root-SR8cQa {
+  transform: translateZ(0);
+}
+.header-QKLPzZ .wrapper-3t9DeA::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  pointer-events: none;
+  background: var(--user-background) center/cover no-repeat;
+  -webkit-mask: linear-gradient(black, transparent 80%);
+}
+
+.headerInfo-30uryT,
+.tabBarItem-1b8RUP,
+.activity-1ythUs {
+  z-index: 1;
+  position: relative;
+}
+
+.userPopout-3XzG_A {
+	transform:translateZ(0);
+}
+
+.userPopout-3XzG_A .wrapper-3t9DeA::after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	opacity: .5;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: var(--user-popout-position) center;
+	background-image: var(--user-background);
+	-webkit-mask-image: linear-gradient(#000, transparent);
+}
+
+.userPopout-3XzG_A  .header-2BwW8b,
+.userPopout-3XzG_A  .scroller-2FKFPG,
+.userPopout-3XzG_A  .footer-1fjuF6 {
+	z-index: 1;
+}
+
+/*
+USRBG Popouts by Tropix126.
+=========================================== */
+
+.theme-dark {
+
+  /* Quarrel */
+
+--titlebar-top:  4px;
+--icon-top: 0.5px;
+--watermark-top: 5.5px;
+--watermark-text: "Quarrel";
+--icon-img: url("https://i.imgur.com/BlVTpku.png");
+
+--alt-color: 27, 94, 182; /* RGB */
+--alt-color2: #1b5eb6; /* HEX */
+
+--scrollbars: none; /* none or unset */
+--bar-background-primary: #eaebf1;
+--home-icon: url(https://i.imgur.com/Bda0DuK.png);
+  
+--modal-normal-primary-color: #e4e7eefd;
+--modal-normal-secondary-color: #eceff7;
+--playing-color: var(--alt-color2);
+--spotify-color: rgb(37, 129, 18);
+--streaming-color: rgb(127, 50, 179);
+
+  /* Keeping Consistancy With Discord */ 
+--serverlist-background: var(--background-tertiary);
+--memberlist-background: #ebecf0;
+--win-titlebar: var(--background-tertiary);
+
+ /* Header Colors */
+ --header-primary: rgb(5, 5, 5);
+ --header-secondary: #252627;
+
+ /* Text Colours */
+ --text-normal: #1d1e1f;
+ --text-muted: #a2a7af;
+ --text-link: #00b0f4;
+ --channels-default: #4f5358;
+ --interactive-normal: #717377;
+ --interactive-hover: #787d81;
+ --interactive-active: rgb(105, 94, 94);
+ --interactive-muted: #a2a6ad;
+
+ /* Chat */
+ --channeltextarea-background: var(--bar-background-primary);
+ --channeltextarea-background-hover: var(--bar-background-primary);
+
+ /* Background Colours */
+ --background-primary: #191a1f;
+ --background-primary-alt: #191a1f;
+ --background-secondary: #191a1f;
+ --background-secondary-alt: #191a1f;
+ --background-tertiary: #191b22;
+ --background-accent: #2f6cce;
+ --background-floating: #18191c;
+
+ /* Hovering Colours */
+--background-modifier-hover: #225ae6;
+--background-modifier-active: rgba(56, 168, 151, 0.911);
+--background-modifier-selected: rgba(9, 238, 204, 0.952);
+--background-modifier-accent: rgba(56, 168, 151, 0.979);
+--background-message-hover: transparent;
+
+ /* Mentioned  Colours */
+ --background-mentioned: rgba(26, 60, 250, 0.123);
+ --background-mentioned-hover: rgba(26, 60, 250, 0.103);
+ --background-mentioned-bar: var(--background-accent);
+
+ --background-help-warning: rgba(250,166,26,0.1);
+ --background-help-info: rgba(0,176,244,0.1);
+
+ /* Scrollbar Colours */
+ --background-modifier-hover: rgba(67, 87, 119, 0.16);
+ --background-modifier-active: rgba(66, 122, 211, 0.315);
+ --background-modifier-selected: rgba(74, 96, 133, 0.32);
+ --background-modifier-accent: rgba(255, 255, 255, 0.06);
+ --scrollbar-auto-scrollbar-color-thumb: rgba(64, 93, 139, 0.16);
+
+/* Box Shadow On Floating Elements Colours */
+--elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+--elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+--elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+--elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+
+--scrollbar-thin-thumb: #eaedf100;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #e5e9ee;
+    --scrollbar-auto-track: #ebeef100;
+    --scrollbar-auto-scrollbar-color-thumb: #f0f3f8;
+    --scrollbar-auto-scrollbar-color-track: #2f313600;
+    
+/* Other */
+--radio-group-dot-foreground: var(--alt-color);
+}
+
+/* Extras */
+.guilds-1SWlCJ{background-color:var(--serverlist-background)}
+.members-1998pB,.members-1998pB>div{background-color:var(--memberlist-background)}
+.guilds-1SWlCJ{background-color:var(--serverlist-background-light)}
+.powercord-toast .contents{background-color:var(--toast-content)}
+.withFrame-haYltI, .titleBar-AC4pGV {margin-top: var(--titlebar-top);}
+
+
+/*  ----------------------------------------------------
+                  Optional Features
+        Add A "/*" On The Lines Below The Comments
+                  To Disable Them
+    ----------------------------------------------------  */
+
+/* --- */
+/* Optionals End */
+/* ----- */
+
+/*  ----------------------------------------------------
+         ANYTHING ELSE YOU WANT TO ADD GOES BELOW
+               THIS IS FOR DEBUGGING ETC
+                    v0.2 (Fluidcord)
+    ----------------------------------------------------  */
+
