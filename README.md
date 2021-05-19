@@ -1,7 +1,7 @@
 # Fluidcord
 Fluidcord
 
-![preview](https://i.imgur.com/LrhiToU.png)
+![preview](https://imgur.com/a/IQVWh1d)
 
 ## How To Install Fluidcord?
 
@@ -29,5 +29,7 @@ For **Goosemod** Users:
 Thank you for checking out/downloading my Theme :)
 Direct Message Me On @Discord Or Join By **[github.com/leeprky](https://discord.gg/Ff3rqAYB89)** For More Help/Information For Installing/Support. Enjoy :)
 
-## Previews
+## Compared To Reference
+
+![preview](https://i.imgur.com/LrhiToU.png)
 
