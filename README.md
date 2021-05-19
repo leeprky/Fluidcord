@@ -1,7 +1,7 @@
 # Fluidcord
 Fluidcord
 
-![preview](https://imgur.com/a/IQVWh1d)
+![preview](https://i.imgur.com/3vDd0CW.png)
 
 ## How To Install Fluidcord?
 
