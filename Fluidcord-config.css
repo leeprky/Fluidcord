@@ -1,6 +1,6 @@
 /*  ------------------------------------------
                Fluidcord (POWERCORD)
-                      v0.3.1
+                      v0.3.2
                 - leeprky#2063 -
     ------------------------------------------  */
 
@@ -124,6 +124,20 @@ USRBG Popouts by Tropix126.
   --focus-primary: #00b0f4;
 }
 
+:root {
+  --font-primary: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+  --font-korean: Whitney,"Apple SD Gothic Neo","NanumBarunGothic","맑은 고딕","Malgun Gothic",Gulim,굴림,Dotum,돋움,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-japanese: Whitney,Hiragino Sans,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,Osaka,"MS PGothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-chinese-simplified: Whitney,"Microsoft YaHei New",微软雅黑,"Microsoft Yahei","Microsoft JhengHei",宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-chinese-traditional: Whitney,"Microsoft JhengHei",微軟正黑體,"Microsoft JhengHei UI","Microsoft YaHei",微軟雅黑,宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+:root {
+  --avatar-border-radius: 50%;
+}
+
 .theme-dark {
 
   --alt-color: 114,137,218; /* RGB */
@@ -147,7 +161,7 @@ USRBG Popouts by Tropix126.
 
   --text-normal: #dcddde;
   --text-muted: #72767d;
-  --text-link: #00b0f4;
+  --text-link: #40c9ff;
   --text-positive: #4fdc7b;
   --interactive-normal: #b9bbbe;
   --interactive-hover: #dcddde;
@@ -242,7 +256,7 @@ USRBG Popouts by Tropix126.
 
   --text-normal: #2e3338;
   --text-muted: #747f8d;
-  --text-link: #0067e0;
+  --text-link: #88bfff;
   --text-positive: #3ba55c;
 
   --interactive-normal: #4f5660;
@@ -338,13 +352,13 @@ USRBG Popouts by Tropix126.
 /*  ----------------------------------------------------
          ANYTHING ELSE YOU WANT TO ADD GOES BELOW
                THIS IS FOR DEBUGGING ETC
-                    v0.3.1 (Fluidcord)
+                    v0.3.2 (Fluidcord)
     ----------------------------------------------------  */
 
 /* FluidChat */
 .markup-2BOw-j:not(.slateTextArea-1Mkdgw){
   padding-bottom:8px;
-  padding-top:8px; 
+  padding-top:10px; 
   padding-right:1vh !important;
   padding-left:1vh !important;
   border-radius: 10px;
@@ -366,6 +380,7 @@ USRBG Popouts by Tropix126.
 .theme-light [data-is-author-self="true"] .markup-2BOw-j {
   background-color: #858585 !important;
   color: #fafafa;
+  bottom: -10px !important;
   margin-left: 10% !important;
 }
 .theme-dark [data-is-author-self="true"] .markup-2BOw-j {
@@ -390,37 +405,56 @@ USRBG Popouts by Tropix126.
   background-color: #ECECEC !important;
   color: #414040;
   margin: 0 !important;
+  bottom: -10px !important;
   margin-right: 10% !important;
   display: inline-block;
 }
-
+[data-is-author-self="true"] .repliedTextPreview-2NBljf, .threadMessageAccessoryPreview-1uSsue {
+  height: 70px;
+  margin-left: 200px;
+}
 
 [data-is-author-self="true"] .container-1ov-mD {
   display: flex;
   flex-direction: row-reverse !important; 
 }
 
-  .slateTextArea-1Mkdgw {
+.slateTextArea-1Mkdgw {
   position:relative !important;
 }
-.repliedMessage-VokQwo:before {
-  display: none;
+.cozyMessage-3V1Y8y.groupStart-23k01U {
+  min-height: 2.95rem;
 }
 .username-1A8OIy {
   display: none;
 }
-.avatar-1BDn8e {
+.avatar-1BDn8e, .executedCommandAvatar-yZ5r9z, .replyAvatar-1K9Wmr, .replyBadge-r1su3o, .threadMessageAccessoryAvatar-2XWCxw {
   left: 16px;
   margin-top: calc(4px - .250rem) !important;
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+.message-2qnXI6 .avatar-1BDn8e {
+  margin-top: 5px !important;
+}
 .chatContent-a9vAAp {
   margin-left: 20px;
 }
 .cozy-3raOZG .header-23xsNx {
   display: none;
+}
+.compact-T3H92H.wrapper-2a6GCs, .cozy-3raOZG.wrapper-2a6GCs {
+  padding-top: .125rem;
+  padding-bottom: 1rem;
+}
+.container-1ov-mD>* {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: -15px;
+}
+.repliedTextPreview-2NBljf, .threadMessageAccessoryPreview-1uSsue {
+  height: 70px;
 }
 
 /* TitleBar */
@@ -473,33 +507,47 @@ USRBG Popouts by Tropix126.
 .content-yTz4x3 > div:nth-child(2) {
   order:-1;
 }
-.wrapper-3t9DeA {
+.layout-2DM8Md .wrapper-3t9DeA {
   width: 62px;
   height: 62px;
   position: relative;
   border-radius: 00%;
 }
-.mask-1l8v16.svg-2V3M55 {
+.layout-2DM8Md .mask-1l8v16.svg-2V3M55 {
   display: block;
   right: -20px;
-  bottom: -10px;
+  bottom: -11px;
   width: 55px;
   height: 55px;
 }
 .member-3-YXUe.container-2Pjhx-.clickable-1JJAn8 .layout-2DM8Md, .selected-aXhQR6 .layout-2DM8Md {
   height: 60px;
 }
-.wrapper-3t9DeA, .avatar-3uk_u9 {
+.layout-2DM8Md .wrapper-3t9DeA, .avatar-3uk_u9 {
   width: 15px;
   margin: 0px;
   margin-left: 20px;
 }
 .content-3QAtGj {
-  margin-left: 35px;
+  margin-left: 25.5px;
+}
+#app-mount .wrapper-3t9DeA .mask-1l8v16 > rect[x="22"] {
+  display: none;
+}
+#app-mount .wrapper-3t9DeA foreignObject {
+  -webkit-mask: none;
+          mask: none;
+  border-radius: var(--avatar-border-radius);
+}
+.membersGroup-v9BXpm {
+  padding: 24px 8px 0 16px;
+  height: 40px;
+  font-size: 13px;
+  margin-left: 0px;
+  font-family: var(--font-primary);
 }
 
 /* UserInfoSection */
 .avatarWrapper-2yR4wp[aria-label="Set Status"] {
   display: none;
 }
-
