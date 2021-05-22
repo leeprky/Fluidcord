@@ -1,6 +1,6 @@
 /*  ------------------------------------------
                Fluidcord (POWERCORD)
-                      v0.4
+                      v0.3.2.2
                 - leeprky#2063 -
     ------------------------------------------  */
 
@@ -41,7 +41,7 @@ body{
 
 /*  ------------------------------------------
          Fluidcord Customisable Configuration
-                    v0.4
+                    v0.3.2
                -leeprky#2063-
     ------------------------------------------  */
 
@@ -346,6 +346,9 @@ USRBG Popouts by Tropix126.
   border-radius: 0px;
   bottom: 10px;
 }
+.searchHeader-2XoQg7 > div:nth-child(2) {
+  order:-1;
+}
 
 /*  ----------------------------------------------------
                   Optional Features
@@ -360,7 +363,7 @@ USRBG Popouts by Tropix126.
 /*  ----------------------------------------------------
          ANYTHING ELSE YOU WANT TO ADD GOES BELOW
                THIS IS FOR DEBUGGING ETC
-                    v0.4 (Fluidcord)
+                    v0.3.2 (Fluidcord)
     ----------------------------------------------------  */
 
     .childWrapper-anI2G9, .wrapper-1BJsBx, .wrapper-25eVIn {
@@ -435,11 +438,12 @@ USRBG Popouts by Tropix126.
   top: 20px;
   position: relative;
 }
-.search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root, .searchBar-3dMhjb .icon-38sknP {
+.DraftEditor-editorContainer, .search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root, .searchBar-3dMhjb .icon-38sknP {
   margin-top: 5px;
+  margin-left: 3px;
 }
 .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
-  width: 220px;
+  width: 222px;
 }
 .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
   width: 100%;
@@ -863,6 +867,8 @@ USRBG Popouts by Tropix126.
 .container-1r6BKw.themed-ANHk51 {
   height: 50px;
 }
+
+
 
 /* Leftpart */
 /*
