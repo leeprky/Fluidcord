@@ -1,6 +1,6 @@
 /*  ------------------------------------------
                Fluidcord (POWERCORD)
-                      v0.3.2.2
+                      v0.4
                 - leeprky#2063 -
     ------------------------------------------  */
 
@@ -41,7 +41,7 @@ body{
 
 /*  ------------------------------------------
          Fluidcord Customisable Configuration
-                    v0.3.2
+                    v0.4
                -leeprky#2063-
     ------------------------------------------  */
 
@@ -149,7 +149,7 @@ USRBG Popouts by Tropix126.
   --modal-normal-primary-color: var(--background-secondary);
   --modal-normal-secondary-color: var(--background-secondary);
   --serverlist-background: var(--background-secondary);
-  --memberlist-background: var(--background-secondary);
+  --memberlist-background: #000 !important;
 
   --toast-background: #2f3136;
   --toast-header: #202225;
@@ -242,8 +242,9 @@ USRBG Popouts by Tropix126.
   
   --modal-normal-primary-color: rgb(255, 255, 255);
   --modal-normal-secondary-color: var(--background-secondary);
-  --serverlist-background: var(--background-secondary);
-  --memberlist-background: var(--background-secondary);
+  --serverlist-background: rgba(0, 0, 0, 0.027);
+  --memberlist-background: rgba(255, 255, 255, 0);
+  --background2: rgba(255, 253, 253, 0.548);
 
   --toast-background: #fff;
   --toast-header: #e3e5e8;
@@ -332,7 +333,10 @@ USRBG Popouts by Tropix126.
 }
 
 .guilds-1SWlCJ{background-color:var(--serverlist-background)}
-.members-1998pB,.members-1998pB>div{background-color:var(--memberlist-background)}
+.members-1998pB, .members-1998pB>div{background-color:var(--memberlist-background)}
+#app-mount .sidebar-2K8pFh, .container-3w7J-x {background-color: transparent;}
+.panels-j1Uci_ {background-color: var(--background-secondary);
+}
 .powercord-toast .contents{background-color:var(--toast-content)}
 
 .bg-h5JY_x {
@@ -356,7 +360,7 @@ USRBG Popouts by Tropix126.
 /*  ----------------------------------------------------
          ANYTHING ELSE YOU WANT TO ADD GOES BELOW
                THIS IS FOR DEBUGGING ETC
-                    v0.3.2 (Fluidcord)
+                    v0.4 (Fluidcord)
     ----------------------------------------------------  */
 
     .childWrapper-anI2G9, .wrapper-1BJsBx, .wrapper-25eVIn {
@@ -397,8 +401,9 @@ USRBG Popouts by Tropix126.
     transform: rotate(-90deg);
     height: 13vw !important;
     width: 80px;
-    top: 235px;
+    top: 215px;
     z-index: 999;
+    display: fixed;
     bottom: unset;
     position: absolute !important;
     left: 0;
@@ -415,13 +420,26 @@ USRBG Popouts by Tropix126.
   height: 50px;
 }
 .searchBar-3dMhjb {
-  position: absolute;
-  left: -1600px;
-  z-index: 9999999999;
-  bottom: -15px;
-  background-color: #1ed860;
-  width: 180px;
-  height: 30px;
+  display: fixed;
+  height: 35px;
+  width: 220px;
+  position:fixed;
+  left: 10px;
+  top: 37px;
+  border-radius: 4px;
+  color: var(--text-normal);
+  background-color: #fdfcfc;
+}
+.container-3ayLPN {
+  left: -1520px;
+  top: 20px;
+  position: relative;
+}
+.search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root, .searchBar-3dMhjb .icon-38sknP {
+  margin-top: 5px;
+}
+.focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
+  width: 220px;
 }
 .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
   width: 100%;
@@ -436,7 +454,11 @@ USRBG Popouts by Tropix126.
 }
 #app-mount .sidebar-2K8pFh {
   border-radius: 0;
-  margin-top: 150px;
+  margin-top: 130px;
+  display: fixed;
+}
+.content-98HsJk {
+  background-color: var(--background2);
 }
   #app-mount .guilds-1SWlCJ .scrollerWrap-1IAIlv {
     width: calc(100% + 30px);
@@ -811,7 +833,7 @@ USRBG Popouts by Tropix126.
 .titleBar-AC4pGV > *:nth-child(2):hover {background-color: #b64537;}
 .titleBar-AC4pGV > *:nth-child(3):hover {background-color: #d6ac2c;}
 .titleBar-AC4pGV > *:nth-child(4):hover {background-color: #24d324;}
-.container-2lgZY8 {margin-top: 10px;}
+.container-2lgZY8 {margin-top: 5px;}
 .wordmark-2iDDfm:after {
   color: rgb(247, 245, 245);
   content: "Discord";
@@ -839,10 +861,8 @@ USRBG Popouts by Tropix126.
 
 /* Chat Header */
 .container-1r6BKw.themed-ANHk51 {
-  height: 60px;
+  height: 50px;
 }
-
-
 
 /* Leftpart */
 /*
