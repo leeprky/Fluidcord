@@ -1,5 +1,5 @@
 # Fluidcord
-Fluidcord
+Fluidcord IS NOT FINISHED AND IS IN BETA PLEASE DONT REPORT BUGS UNTIL FINAL RELEASE
 
 ![preview](https://i.imgur.com/3vDd0CW.png)
 
