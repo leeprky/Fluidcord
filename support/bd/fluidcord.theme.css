@@ -1,1 +1,776 @@
+/**
+ * @name Fluidcord
+ * @author Leeprky
+ * @version 0.4.1
+ * @description Fluidcord Concept
+ * @source https://github.com/leeprky/Fluidcord
+ * @updateUrl https://github.com/leeprky/Fluidcord/blob/main/support/bd/fluidcord.theme.css
+ * @authorId 224524143482241035
+ * @invite Ff3rqAYB89
+ * @donate https://www.paypal.com/leeparkinson22
+ * @website https://leeprky.github.io/
+*/
 
+/*  ------------------------------------------
+               Fluidcord (POWERCORD)
+                      v0.4.1
+                - leeprky#2063 -
+    ------------------------------------------  */
+
+    @import url(https://leeprky.github.io/themes/Fluidcord/Fluidcord-Theme.css);
+    @import url(https://leeprky.github.io/snippits/coolsniipitsforthemes.css);
+    @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
+    @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+    
+    /*  ----------------------------
+             GLASSCORD
+        ----------------------------  */
+    
+    :root{
+      --glasscord-win-blur: transparent;
+      --glasscord-macos-vibrancy: fullscreen-ui;
+      --glasscord-linux-blur: true;
+      --glasscord-titlebar: default;  
+    }
+    body{
+        background-color: transparent;
+    }
+    #app-mount{
+      background-color: rgba(2, 2, 2, 0.007);
+      border-radius: 10px 10px 10px 10px; 
+      border-color: transparent;
+    }
+    .sidebar-2K8pFh {
+      filter: opacity(75%)
+    }
+    
+    .platform-osx .container-1r6BKw {
+      -webkit-app-region: none;
+    }
+    
+    /*  ----------------------------
+           GLASSCORD SUPPORT
+        ----------------------------  */
+    
+    /*  ------------------------------------------
+             Fluidcord Customisable Configuration
+                        v0.3.2
+                   -leeprky#2063-
+        ------------------------------------------  */
+    
+    /*
+    USRBG Profile Modals by Tropix126.
+    =========================================== */
+    
+    @import url('https://discord-custom-covers.github.io/usrbg/dist/usrbg.css');
+    
+    .root-SR8cQa {
+      transform: translateZ(0);
+    }
+    .header-QKLPzZ .wrapper-3t9DeA::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .5;
+      pointer-events: none;
+      background: var(--user-background) center/cover no-repeat;
+      -webkit-mask: linear-gradient(black, transparent 80%);
+    }
+    
+    .headerInfo-30uryT,
+    .tabBarItem-1b8RUP,
+    .activity-1ythUs {
+      z-index: 1;
+      position: relative;
+    }
+    
+    .userPopout-3XzG_A {
+      transform:translateZ(0);
+    }
+    
+    .userPopout-3XzG_A .wrapper-3t9DeA::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .5;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: var(--user-popout-position) center;
+      background-image: var(--user-background);
+      -webkit-mask-image: linear-gradient(#000, transparent);
+    }
+    
+    .userPopout-3XzG_A  .header-2BwW8b,
+    .userPopout-3XzG_A  .scroller-2FKFPG,
+    .userPopout-3XzG_A  .footer-1fjuF6 {
+      z-index: 1;
+    }
+    
+    /*
+    USRBG Popouts by Tropix126.
+    =========================================== */
+    
+    .theme-dark, .theme-light {
+      --text-warning: #faa61a;
+      --text-danger: #ed4245;
+    
+      --info-positive-background: rgba(59,165,92,0.1);
+      --info-positive-foreground: #3ba55c;
+      --info-warning-background: rgba(250,166,26,0.1);
+      --info-warning-foreground: #faa61a;
+      --info-danger-background: rgba(237,66,69,0.1);
+      --info-danger-foreground: #ed4245;
+    
+      --status-positive-background: #3ba55c;
+      --status-positive-text: #fff;
+      --status-warning-background: #faa61a;
+      --status-danger-background: #ed4245;
+    
+      --status-danger-text: #fff;
+      --focus-primary: #00b0f4;
+    }
+    
+    :root {
+      --font-primary: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+      --font-korean: Whitney,"Apple SD Gothic Neo","NanumBarunGothic","맑은 고딕","Malgun Gothic",Gulim,굴림,Dotum,돋움,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      --font-japanese: Whitney,Hiragino Sans,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,Osaka,"MS PGothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+      --font-chinese-simplified: Whitney,"Microsoft YaHei New",微软雅黑,"Microsoft Yahei","Microsoft JhengHei",宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      --font-chinese-traditional: Whitney,"Microsoft JhengHei",微軟正黑體,"Microsoft JhengHei UI","Microsoft YaHei",微軟雅黑,宋体,SimSun,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    
+    :root {
+      --avatar-border-radius: 30.5%;
+    
+      --HSL-server-icon-size: 54.5px;  /* Size of the server icons | DEFAULT: 40px */
+      --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+    }
+    
+    .theme-dark {
+    
+      --alt-color: 114,137,218; /* RGB */
+      --alt-color2: #6D84D1; /* HEX */
+      --modal-normal-primary-color: var(--background-secondary);
+      --modal-normal-secondary-color: var(--background-secondary);
+      --serverlist-background: rgba(255, 255, 255, 0);
+      --memberlist-background: #2c2e3393 !important;
+      --status-bg: rgb(32, 32, 39);
+    
+      --toast-background: #2f3136;
+      --toast-header: #202225;
+      --toast-contents: #36393f;
+      --toast-box-shadow: rgba(0, 0, 0, .2);
+      --toast-border: rgba(28, 36, 43, .6);
+      --spotify-color: #1ed860;
+      
+      --app-background: var(--background-secondary);
+    
+      --header-primary: #fff;
+      --header-secondary: #b9bbbe;
+    
+      --text-normal: #dcddde;
+      --text-muted: #72767d;
+      --text-link: #40c9ff;
+      --text-positive: #4fdc7b;
+      --interactive-normal: #b9bbbe;
+      --interactive-hover: #dcddde;
+      --interactive-active: #fff;
+      --interactive-muted: #4f545c;
+    
+      --background-primary: #36393f;
+      --background-secondary: #2f3136b6;
+      --background-secondary-alt: #292b2fb4;
+      --background-tertiary: #20222500;
+      --background-accent: #4f545c;
+      --background-floating: #18191c;
+    
+      --background-mobile-primary: #36393f;
+      --background-mobile-secondary: #2f3136;
+      --background-modifier-hover: rgba(79,84,92,0.16);
+      --background-modifier-active: rgba(79,84,92,0.24);
+      --background-modifier-selected: rgba(79,84,92,0.32);
+      --background-modifier-accent: hsla(0,0%,100%,0.06);
+    
+      --info-positive-text: #fff;
+      --info-warning-text: #fff;
+      --info-danger-text: #fff;
+      --info-help-background: rgba(0,176,244,0.1);
+      --info-help-foreground: #00b0f4;
+      --info-help-text: #fff;
+      --status-warning-text: #000;
+    
+      --scrollbar-thin-thumb: #202225;
+      --scrollbar-thin-track: transparent;
+      --scrollbar-auto-thumb: #202225;
+      --scrollbar-auto-track: #2e3338;
+      --scrollbar-auto-scrollbar-color-thumb: #202225;
+      --scrollbar-auto-scrollbar-color-track: #2f3136;
+    
+      --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+      --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+      --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+      --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    
+      --logo-primary: #fff;
+      --control-brand-foreground: #a5b3e7;
+    
+      --background-mentioned: rgba(250,166,26,0.1);
+      --background-mentioned-hover: rgba(250,166,26,0.08);
+      --background-message-hover: rgba(4,4,5,0.07);
+    
+      --channels-default: #8e9297;
+    
+      --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+      --channeltextarea-background: #40444b;
+    
+      --activity-card-background: #202225;
+      --textbox-markdown-syntax: #8e9297;
+    
+      --deprecated-card-bg: rgba(32,34,37,0.6);
+      --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+      --deprecated-store-bg: #36393f;
+    
+      --deprecated-quickswitcher-input-background: #72767d;
+      --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+    
+      --deprecated-text-input-bg: rgba(0,0,0,0.1);
+      --deprecated-text-input-border: rgba(0,0,0,0.3);
+      --deprecated-text-input-border-hover: #040405;
+      --deprecated-text-input-border-disabled: #202225;
+      --deprecated-text-input-prefix: #dcddde;
+    }
+    
+    .theme-light {
+    
+      --alt-color: 114,137,218; /* RGB */
+      --alt-color2: #6D84D1; /* HEX */
+      
+      --modal-normal-primary-color: rgb(255, 255, 255);
+      --modal-normal-secondary-color: var(--background-secondary);
+      --serverlist-background: rgba(0, 0, 0, 0.027);
+      --memberlist-background: rgba(243, 233, 233, 0.164);
+      --background2: rgba(255, 253, 253, 0.548);
+      --status-bg: #fff;
+    
+      --toast-background: #fff;
+      --toast-header: #e3e5e8;
+      --toast-contents: #f2f3f5;
+      --toast-box-shadow: rgba(0, 0, 0, .1);
+      --toast-border: rgba(28, 36, 43, .06);
+      --spotify-color: #1ed860;
+    
+      --app-background: var(--background-secondary);
+    
+    
+      --header-primary: #060607;
+      --header-secondary: #4f5660;
+    
+      --text-normal: #2e3338;
+      --text-muted: #747f8d;
+      --text-link: #88bfff;
+      --text-positive: #3ba55c;
+    
+      --interactive-normal: #4f5660;
+      --interactive-hover: #2e3338;
+      --interactive-active: #060607;
+      --interactive-muted: #c7ccd1;
+    
+      --background-primary: rgba(255, 255, 255, 0.596);
+      --background-secondary: #f2f3f5ab;
+      --background-secondary-alt: #f2f3f5ab;
+      --background-tertiary: #e3e5e800;
+      --background-accent: #747f8d;
+      --background-floating: #fff;
+    
+      --background-mobile-primary: #f8f9f9;
+      --background-mobile-secondary: #fff;
+      --background-modifier-hover: rgba(116,127,141,0.08);
+      --background-modifier-active: rgba(116,127,141,0.16);
+      --background-modifier-selected: rgba(116,127,141,0.24);
+      --background-modifier-accent: rgba(6,6,7,0.08);
+    
+      --info-positive-text: #000;
+      --info-warning-text: #000;
+      --info-danger-text: #000;
+      --info-help-background: rgba(0,103,224,0.1);
+      --info-help-foreground: #0067e0;
+      --info-help-text: #000;
+    
+      --status-warning-text: #fff;
+      --scrollbar-thin-thumb: rgba(79,84,92,0.3);
+      --scrollbar-thin-track: transparent;
+      --scrollbar-auto-thumb: #ccc;
+      --scrollbar-auto-track: #f2f2f2;
+      --scrollbar-auto-scrollbar-color-thumb: #e3e5e8;
+      --scrollbar-auto-scrollbar-color-track: #f2f3f5;
+    
+      --elevation-stroke: 0 0 0 1px rgba(6,6,7,0.08);
+      --elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
+      --elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
+      --elevation-high: 0 8px 16px rgba(0,0,0,0.16);
+    
+      --logo-primary: #7289da;
+      --control-brand-foreground: #7289da;
+    
+      --background-mentioned: rgba(250,166,26,0.1);
+      --background-mentioned-hover: rgba(250,166,26,0.2);
+      --background-message-hover: rgba(6,6,7,0.02);
+    
+      --channels-default: #6a7480;
+    
+      --guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
+      --channeltextarea-background: #ebedef;
+    
+      --activity-card-background: #fff;
+      --textbox-markdown-syntax: #6a7480;
+    
+      --deprecated-card-bg: #f8f9f9;
+      --deprecated-card-editable-bg: rgba(246,246,247,0.6);
+      --deprecated-store-bg: #f8f9f9;
+    
+      --deprecated-quickswitcher-input-background: #fff;
+      --deprecated-quickswitcher-input-placeholder: rgba(79,84,92,0.3);
+    
+      --deprecated-text-input-bg: rgba(79,84,92,0.02);
+      --deprecated-text-input-border: rgba(79,84,92,0.3);
+      --deprecated-text-input-border-hover: #b9bbbe;
+      --deprecated-text-input-border-disabled: #dcddde;
+      --deprecated-text-input-prefix: #b9bbbe;
+    }
+    
+    .guilds-1SWlCJ{background-color:var(--serverlist-background)}
+    .members-1998pB, .members-1998pB>div{background-color:var(--memberlist-background)}
+    #app-mount .sidebar-2K8pFh, .container-3w7J-x {background-color: transparent;}
+    .panels-j1Uci_ {background-color: var(--background-secondary);
+    }
+    .powercord-toast .contents{background-color:var(--toast-content)}
+    
+    .bg-h5JY_x {
+      background-color: var(--app-background);
+    }
+    .platform-win .sidebar-2K8pFh {
+      border-radius: 0px;
+      bottom: 10px;
+    }
+    .searchHeader-2XoQg7 > div:nth-child(2) {
+      order:-1;
+    }
+    
+    /*  ----------------------------------------------------
+                      Optional Features
+            Add A "/*" On The Lines Below The Comments
+                      To Disable Them
+        ----------------------------------------------------  */
+    
+    /* --- */
+    /* Optionals End */
+    /* ----- */
+    
+    /*  ----------------------------------------------------
+             ANYTHING ELSE YOU WANT TO ADD GOES BELOW
+                   THIS IS FOR DEBUGGING ETC
+                        v0.3.2 (Fluidcord)
+        ----------------------------------------------------  */
+    
+      :root {
+        --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+        --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
+        --server-container: calc(var(--server-size) + 30px);
+      }
+      
+      #app-mount .app-1q1i1E .base-3dtUhz {
+        top: var(--server-container) !important;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0;
+        bottom: 0;
+      }
+      #app-mount .sidebar-2K8pFh {
+        border-radius: 0;
+      }
+      #app-mount [class*=unreadMentionsIndicator] {
+        width: var(--server-size);
+        padding: 0;
+        left: 45%;
+        height: 20px !important;
+        width: 40px;
+        z-index: 99999;
+        transform: translateX(-50%);
+        height: auto;
+      }
+      #app-mount .guilds-1SWlCJ {
+        transform-origin: top left;
+        transform: rotate(-90deg);
+        height: 240px;
+        width: 80px;
+        top: 215px;
+        z-index: 999;
+        left: 0;
+      }
+    
+    .scroller-1JbKMe {
+      margin-top: 95px;
+    }
+    .searchBar-6Kv8R2 {
+      bottom: -12px;
+    }
+    .icon-27yU2q, .wrapper-1BJsBx[aria-label="Home"], .childWrapper-anI2G9, .wrapper-1BJsBx, .wrapper-25eVIn {
+      border-radius: var(--avatar-border-radius);
+      height: 48px;
+      width: 48px;
+    }
+    .searchBar-3dMhjb {
+      display: fixed;
+      height: 35px;
+      width: 220px;
+      position:fixed;
+      left: 10px;
+      top: 43px;
+      border-radius: 4px;
+      color: var(--text-normal);
+      background-color: #fdfcfc;
+    }
+    .theme-dark .searchBar-3dMhjb {
+      display: fixed;
+      height: 35px;
+      width: 220px;
+      position:fixed;
+      left: 10px;
+      top: 43px;
+      border-radius: 4px;
+      color: var(--text-normal);
+      background-color: var(--background-primary);
+    }
+    .container-3ayLPN {
+      left: -1520px;
+      top: q10px;
+      position: relative;
+    }
+    .DraftEditor-editorContainer, .search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root, .searchBar-3dMhjb .icon-38sknP {
+      margin-top: 5px;
+      margin-left: 3px;
+    }
+    .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
+      width: 222px;
+    }
+    .theme-light .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
+      width: 100%;
+      height: 40px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+    .theme-dark .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
+      width: 100%;
+      height: 40px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      background-color: rgb(19, 17, 17);
+    }
+    .platform-win .layer-3QrUeG {
+      top: -100px;
+    }
+    #app-mount .sidebar-2K8pFh {
+      border-radius: 0;
+      margin-top: 128px;
+      display: fixed;
+    }
+    .content-98HsJk {
+      background-color: var(--background2);
+    }
+      #app-mount .guilds-1SWlCJ .scrollerWrap-1IAIlv {
+        width: calc(100% + 30px);
+      }
+      #app-mount .guilds-1SWlCJ .scrollerBase-289Jih {
+        padding-top: 0 !important;
+      }
+      #app-mount .guilds-1SWlCJ .scrollerBase-289Jih > div[style]:not(.listItem-2P_4kh) {
+        height: auto !important;
+      }
+      #app-mount .guilds-1SWlCJ .scrollerBase-289Jih > div[style]:not(.listItem-2P_4kh)[style*="height: 0px"] {
+        padding-top: 1px;
+      }
+      #app-mount .guilds-1SWlCJ .svg-1X37T1,
+      #app-mount .guilds-1SWlCJ .wrapper-25eVIn,
+      #app-mount .guilds-1SWlCJ .guildsError-b7zR5H,
+      #app-mount .guilds-1SWlCJ .placeholderMask-3K9THS {
+        width: var(--server-size);
+        height: var(--server-size);
+      }
+      #app-mount .guilds-1SWlCJ [role=group] {
+        height: auto !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] {
+        transform: rotate(90deg) translateY(-50%);
+        height: var(--server-size);
+        width: 4px;
+        top: calc(var(--server-size) / -1 + var(--server-size) / 2 - 8px) !important;
+        margin-left: -2px;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span {
+        height: 100% !important;
+        width: 4px !important;
+        transform: scale(0, 1) !important;
+        transition: 0.15s ease !important;
+        margin-left: 0;
+        border-radius: 0 4px 4px 0;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 0"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 1"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 2"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 3"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 4"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 5"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 6"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 7"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 8"] {
+        transform: scale(1, 0.24) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 9"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 10"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 11"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 12"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 13"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 14"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 15"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 16"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 17"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 18"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 19"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 20"] {
+        transform: scale(1, 0.7) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 21"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 22"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 23"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 24"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 25"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 26"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 27"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 28"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 29"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 30"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 31"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 32"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 33"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 34"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 35"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 36"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 37"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 38"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 39"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 40"] {
+        transform: scale(1, 1) !important;
+      }
+      #app-mount .guilds-1SWlCJ .wrapper-sa6paO {
+        height: var(--server-size) !important;
+      }
+      #app-mount .guilds-1SWlCJ .wrapper-21YSNc,
+      #app-mount .guilds-1SWlCJ .wrapper-3Njo_c {
+        width: var(--server-container);
+      }
+      #app-mount .guilds-1SWlCJ [class*=listItem]:not([class*=listItemWrapper]) {
+        width: var(--server-size);
+        transform: rotate(90deg);
+        margin: var(--server-spacing) 10px;
+        position: unset;
+      }
+      #app-mount .guilds-1SWlCJ [class*=guildSeparator] {
+        transform: rotate(90deg);
+        width: var(--server-size);
+      }
+      .svg-1X37T1 {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 58px;
+        height: 70px;
+    }
+      #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
+        width: var(--server-size);
+        left: 50%;
+        border-radius: 10px;
+        transform: translateX(-50%);
+      }
+      #app-mount .guilds-1SWlCJ .folder-21wGz3 {
+        background: transparent;
+      }
+      #app-mount [class*=listItemTooltip] {
+        position: absolute;
+        max-width: unset;
+        white-space: nowrap;
+        margin-left: calc(var(--server-size) / -1 - 20px);
+        top: calc(var(--server-size) - 10px);
+      }
+      #app-mount [class*=listItemTooltip] [class*=tooltipPointer] {
+        transform: rotate(180deg);
+        top: -5px;
+        right: unset;
+        left: 13px;
+        z-index: 1;
+      }
+      #app-mount .friendsOnline-2JkivW {
+        position: absolute;
+        transform: translate(-50%, 50%);
+        top: calc(-50% + var(--server-spacing));
+        left: calc(-50%);
+        width: calc(var(--server-size) + var(--server-spacing));
+        display: flex;
+        justify-content: center;
+      }
+      #app-mount .guilds-1SWlCJ.content-Pph8t6, #app-mount .BF-folderSidebar {
+        position: absolute !important;
+        top: calc(var(--server-container) * 2) !important;
+      }
+      #app-mount .guilds-1SWlCJ.content-Pph8t6:not(.closed-j55_T-) + .base-3dtUhz, #app-mount .BF-folderSidebar:not(.closed-j55_T-) + .base-3dtUhz {
+        top: calc(var(--server-container) * 2) !important;
+      }
+      #app-mount .guilds-1SWlCJ .frame-oXWS21[class*=listItem] {
+        height: var(--server-size) !important;
+      }
+      #app-mount .guilds-1SWlCJ .frame-oXWS21[class*=listItem] .wrapper-1BJsBx {
+        height: 100% !important;
+      }
+      #app-mount .guilds-1SWlCJ .frame-oXWS21[class*=listItem] .button-Jt-tIg {
+        width: 100%;
+        height: 100% !important;
+        border-radius: 50%;
+        padding: 2px;
+        font-size: 10px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      #app-mount .BF-folderSidebar {
+        top: calc(var(--server-container)) !important;
+      }
+      
+      html.platform-osx #app-mount .typeMacOS-3EmCyP {
+        width: 100%;
+      }
+      html.platform-osx #app-mount .base-3dtUhz {
+        top: calc(var(--server-container) + 30px) !important;
+      }
+      html.platform-osx #app-mount #pluginNotice {
+        top: 32px;
+        z-index: 100000 !important;
+      }
+      body.foldercontentopened .base-3dtUhz {
+        transition: 0.2s ease !important;
+      }
+
+      .wrapper-25eVIn, .listItem-GuPuDH foreignObject {
+        mask: none;
+        height: 85px;
+        width: 85px;
+    }
+    .wrapper-25eVIn {
+      margin-bottom: 50px;
+      top: -10px;
+    }
+
+    .icon-27yU2q, .wrapper-1BJsBx[aria-label="Home"], .childWrapper-anI2G9, .wrapper-1BJsBx, .wrapper-25eVIn {
+      border-radius: var(--avatar-border-radius);
+      width:100%; height:100%;
+  }
+  #app-mount .guilds-1SWlCJ {
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    height: 240px;
+    width: 100px;
+    top: 280px;
+    z-index: 999;
+    left: 0;
+}
+
+#app-mount .guilds-1SWlCJ {
+  mask: none;
+  width: 150px;
+}
