@@ -4,7 +4,7 @@
                 - leeprky#2063 -
     ------------------------------------------  */
 
-@import url(https://leeprky.github.io/themes/Fluidcord/Fluidcord-Theme.cs);
+@import url(https://leeprky.github.io/themes/Fluidcord/Fluidcord-Theme.css);
 @import url(https://leeprky.github.io/snippits/coolsniipitsforthemes.css);
 @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
@@ -148,8 +148,9 @@ USRBG Popouts by Tropix126.
   --alt-color2: #6D84D1; /* HEX */
   --modal-normal-primary-color: var(--background-secondary);
   --modal-normal-secondary-color: var(--background-secondary);
-  --serverlist-background: var(--background-secondary);
-  --memberlist-background: #000 !important;
+  --serverlist-background: rgba(255, 255, 255, 0);
+  --memberlist-background: #2c2e3393 !important;
+  --status-bg: rgb(32, 32, 39);
 
   --toast-background: #2f3136;
   --toast-header: #202225;
@@ -245,6 +246,7 @@ USRBG Popouts by Tropix126.
   --serverlist-background: rgba(0, 0, 0, 0.027);
   --memberlist-background: rgba(243, 233, 233, 0.164);
   --background2: rgba(255, 253, 253, 0.548);
+  --status-bg: #fff;
 
   --toast-background: #fff;
   --toast-header: #e3e5e8;
@@ -366,16 +368,6 @@ USRBG Popouts by Tropix126.
                     v0.3.2 (Fluidcord)
     ----------------------------------------------------  */
 
-    .childWrapper-anI2G9, .wrapper-1BJsBx, .wrapper-25eVIn {
-      width: 48px;
-      height: 48px;
-      z-index: 99999;
-      position: relative;
-  }
-  .members-1998pB, .members-1998pB>div {
-    width: 280px;
-  }
-
   :root {
     --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
     --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
@@ -434,6 +426,17 @@ USRBG Popouts by Tropix126.
   color: var(--text-normal);
   background-color: #fdfcfc;
 }
+.theme-dark .searchBar-3dMhjb {
+  display: fixed;
+  height: 35px;
+  width: 220px;
+  position:fixed;
+  left: 10px;
+  top: 43px;
+  border-radius: 4px;
+  color: var(--text-normal);
+  background-color: var(--background-primary);
+}
 .container-3ayLPN {
   left: -1520px;
   top: q10px;
@@ -446,7 +449,7 @@ USRBG Popouts by Tropix126.
 .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
   width: 222px;
 }
-.searchBar-6Kv8R2 .searchBarComponent-32dTOx {
+.theme-light .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
   width: 100%;
   height: 40px;
   overflow: hidden;
@@ -454,12 +457,20 @@ USRBG Popouts by Tropix126.
   border-radius: 4px;
   background-color: #fff;
 }
+.theme-dark .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: rgb(19, 17, 17);
+}
 .platform-win .layer-3QrUeG {
   top: -100px;
 }
 #app-mount .sidebar-2K8pFh {
   border-radius: 0;
-  margin-top: 140px;
+  margin-top: 128px;
   display: fixed;
 }
 .content-98HsJk {
@@ -642,6 +653,14 @@ USRBG Popouts by Tropix126.
     transform: rotate(90deg);
     width: var(--server-size);
   }
+  .svg-1X37T1 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 58px;
+    height: 70px;
+}
   #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
     width: var(--server-size);
     left: 50%;
@@ -710,226 +729,6 @@ USRBG Popouts by Tropix126.
     top: 32px;
     z-index: 100000 !important;
   }
-  
   body.foldercontentopened .base-3dtUhz {
     transition: 0.2s ease !important;
   }
-
-
-/* FluidChat */
-[data-is-author-self="true"] .repliedMessage-VokQwo:before {
-  display: none !important;
-}
-.markup-2BOw-j:not(.slateTextArea-1Mkdgw){
-  padding-bottom:8px;
-  padding-top:10px; 
-  padding-right:1vh !important;
-  padding-left:1vh !important;
-  border-radius: 10px;
-  white-space: pre-wrap !important;
-  box-sizing: border-box !important;
-}
-
-[data-is-author-self="true"] .avatar-1BDn8e, [data-is-author-self="true"] .headerText-3Uvj1Y   {
-  display:none;
-}
-.timestamp-3ZCmNB{
-  position:absolute;
-}
-[data-is-author-self="true"] .contents-2mQqc9, [data-is-author-self="true"] .reactions-12N0jA {
-  display: flex;
-  flex-direction: row-reverse; 
-  flex-wrap: wrap-reverse;
-}
-.theme-light [data-is-author-self="true"] .markup-2BOw-j {
-  background-color: #858585 !important;
-  color: #fafafa;
-  bottom: -10px !important;
-  margin-left: 10% !important;
-}
-.theme-dark [data-is-author-self="true"] .markup-2BOw-j {
-  background-color: #f7f3f3 !important;
-  color: #3a3a3a;
-  margin-left: 10% !important;
-}
-
-[data-is-author-self="false"] .contents-2mQqc9 {
-  flex-direction: row;
-  max-width: 100% !important;
-  margin-left: 10px;
-}
-.theme-dark [data-is-author-self="false"] .markup-2BOw-j {
-  background-color: #555555 !important;
-  color: #dfdfdf;
-  margin: 0 !important;
-  margin-right: 10% !important;
-  display: inline-block;
-}
-.theme-light [data-is-author-self="false"] .markup-2BOw-j {
-  background-color: #ECECEC !important;
-  color: #414040;
-  margin: 0 !important;
-  bottom: -10px !important;
-  margin-right: 10% !important;
-  display: inline-block;
-}
-[data-is-author-self="true"] .repliedTextPreview-2NBljf, .threadMessageAccessoryPreview-1uSsue {
-  height: 70px;
-  margin-left: 200px;
-}
-
-[data-is-author-self="true"] .container-1ov-mD {
-  display: flex;
-  flex-direction: row-reverse !important; 
-}
-
-.slateTextArea-1Mkdgw {
-  position:relative !important;
-}
-.cozyMessage-3V1Y8y.groupStart-23k01U {
-  min-height: 2.95rem;
-}
-.username-1A8OIy {
-  display: none;
-}
-.avatar-1BDn8e, .executedCommandAvatar-yZ5r9z, .replyAvatar-1K9Wmr, .replyBadge-r1su3o, .threadMessageAccessoryAvatar-2XWCxw {
-  left: 16px;
-  margin-top: calc(4px - .250rem) !important;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.message-2qnXI6 .avatar-1BDn8e {
-  margin-top: 5px !important;
-}
-.chatContent-a9vAAp {
-  margin-left: 20px;
-}
-.cozy-3raOZG .header-23xsNx {
-  display: none;
-}
-.compact-T3H92H.wrapper-2a6GCs, .cozy-3raOZG.wrapper-2a6GCs {
-  padding-top: .125rem;
-  padding-bottom: 1rem;
-}
-.container-1ov-mD>* {
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-bottom: -15px;
-}
-.repliedTextPreview-2NBljf, .threadMessageAccessoryPreview-1uSsue {
-  height: 70px;
-}
-    [data-is-author-self="true"] .repliedTextPreview-2NBljf, .threadMessageAccessoryPreview-1uSsue {
-      height: 70px;
-      margin-left: 0px;
-      width: auto;
-      margin-top: 15px;
-      min-width: 50px;
-  }
-  .theme-light [data-is-author-self="false"] .embed-IeVjo6 {
-    margin-left: 10px !important;
-  }
-  .repliedTextContentIcon-1ivTae, .threadMessageAccessoryContentIcon-1QAVEG {
-    margin-top: 3px;
-  }
-
-/* TitleBar */
-.titleBar-AC4pGV > *:nth-child(2):hover {background-color: #b64537;}
-.titleBar-AC4pGV > *:nth-child(3):hover {background-color: #d6ac2c;}
-.titleBar-AC4pGV > *:nth-child(4):hover {background-color: #24d324;}
-.container-2lgZY8 {margin-top: 5px;}
-.wordmark-2iDDfm:after {
-  color: rgb(247, 245, 245);
-  content: "Discord";
-  font-size: 15px;
-  font-weight: 700;
-  position: absolute;
-  width: 4000px;
-  top: 8.8px;
-  left: 11px;
-}
-.theme-light .wordmark-2iDDfm:after {color: rgb(48, 48, 48);}
-.theme-dark .wordmark-2iDDfm:after {color: rgb(247, 245, 245);}
-.wordmark-2iDDfm > svg {
-  width: 0px;
-}
-.winButton-iRh8-Z {
-  position: relative;
-  top: -4px;
-  cursor: pointer;
-  width: 32px;
-  height: 30px;
-  pointer-events: auto;
-  -webkit-app-region: no-drag;
-}
-
-/* Chat Header */
-.container-1r6BKw.themed-ANHk51 {
-  height: 50px;
-}
-
-
-
-/* Leftpart */
-/*
-.platform-win .sidebar-2K8pFh {
-  margin-top: 280px;
-}
-.tree-2wKJdG, .guilds-1SWlCJ {
-
-}
-
-/* Member List */
-.content-yTz4x3 > div:nth-child(2) {
-  order:-1;
-}
-.layout-2DM8Md .wrapper-3t9DeA {
-  width: 62px;
-  height: 62px;
-  position: relative;
-  border-radius: 00%;
-}
-.layout-2DM8Md .mask-1l8v16.svg-2V3M55 {
-  display: block;
-  right: -20px;
-  bottom: -11px;
-  width: 55px;
-  height: 55px;
-}
-.member-3-YXUe.container-2Pjhx-.clickable-1JJAn8 .layout-2DM8Md, .selected-aXhQR6 .layout-2DM8Md {
-  height: 60px;
-}
-.layout-2DM8Md .wrapper-3t9DeA, .avatar-3uk_u9 {
-  width: 15px;
-  margin: 0px;
-  margin-left: 20px;
-}
-.content-3QAtGj {
-  margin-left: 25.5px;
-}
-#app-mount .wrapper-3t9DeA .mask-1l8v16 > rect[x="22"] {
-  display: none;
-}
-#app-mount .wrapper-3t9DeA foreignObject {
-  -webkit-mask: none;
-          mask: none;
-  border-radius: var(--avatar-border-radius);
-}
-.membersGroup-v9BXpm {
-  padding: 24px 8px 0 16px;
-  height: 40px;
-  font-size: 13px;
-  margin-left: 0px;
-  font-family: var(--font-primary);
-}
-
-/* UserInfoSection */
-
-[class="dots-3Bkt3k"] {
-  top: 20px !important;
-}
-
-.member-3-YXUe.container-2Pjhx-.clickable-1JJAn8 .layout-2DM8Md, .selected-aXhQR6 .layout-2DM8Md {
-  width: 245px;
-}
