@@ -1,9 +1,10 @@
 /*  ------------------------------------------
                Fluidcord (POWERCORD)
-                      v0.4.1
+                      v0.4.2
                 - leeprky#2063 -
     ------------------------------------------  */
-
+    @import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
+    @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 @import url(https://leeprky.github.io/themes/Fluidcord/Fluidcord-Theme.css);
 @import url(https://leeprky.github.io/snippits/coolsniipitsforthemes.css);
 @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
@@ -41,7 +42,7 @@ body{
 
 /*  ------------------------------------------
          Fluidcord Customisable Configuration
-                    v0.3.2
+                    v0.4.2
                -leeprky#2063-
     ------------------------------------------  */
 
@@ -76,7 +77,7 @@ body{
 }
 
 :root {
-  --avatar-border-radius: 30.5%;
+  --avatar-border-radius: 50.5%;
 
   --HSL-server-icon-size: 54.5px;  /* Size of the server icons | DEFAULT: 40px */
   --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
