@@ -832,3 +832,7 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
+
+.contentRegionScroller-26nc1e, .sidebarRegionScroller-3MXcoP {
+  margin-top: 50px;
+}
