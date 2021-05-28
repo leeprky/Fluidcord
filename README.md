@@ -1,7 +1,7 @@
 # Fluidcord
 Fluidcord IS NOT FINISHED AND IS IN BETA PLEASE DONT REPORT BUGS UNTIL FINAL RELEASE
 
-![preview](https://i.imgur.com/muQAFoq.png)
+![preview](https://i.imgur.com/ynoCXlU.png)
 
 ## How To Install Fluidcord?
 
