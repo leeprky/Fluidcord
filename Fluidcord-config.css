@@ -1,14 +1,16 @@
 /*  ------------------------------------------
                Fluidcord (POWERCORD)
-                      v0.4.2
+                      v0.4.3
                 - leeprky#2063 -
     ------------------------------------------  */
+
     @import url("https://discord-custom-covers.github.io/usrbg/snippets/modals.css");
     @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 
 @import url(https://leeprky.github.io/snippits/coolsniipitsforthemes.css);
 @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+
 
 /*  ----------------------------
          GLASSCORD
@@ -136,10 +138,10 @@ body{
   --info-help-text: #fff;
   --status-warning-text: #000;
 
-  --scrollbar-thin-thumb: #202225;
+  --scrollbar-thin-thumb: #fcfcfc;
   --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: #202225;
-  --scrollbar-auto-track: #2e3338;
+  --scrollbar-auto-thumb: #fcfcfd;
+  --scrollbar-auto-track: #f1f4f700;
   --scrollbar-auto-scrollbar-color-thumb: #202225;
   --scrollbar-auto-scrollbar-color-track: #2f3136;
 
@@ -428,20 +430,7 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
   margin-top: 00px;
   background-color: var(--background-tertiary);
 }
-.resultsGroup-r_nuzN {
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  left: 30px;
-  margin-top: -0px;
-}
-.searchBar-6Kv8R2 {
-  position: absolute;
-  display: fixed;
-  z-index: 999999999;
-  top: 0px !important;
-  width: 30px;
-}
+
 .channel-2QD9_O {
   position: relative;
   max-width: 224px;
@@ -476,8 +465,7 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
   background-color: var(--background-primary);
 }
 .container-3ayLPN {
-  left: -1520px;
-  top: q10px;
+  top: 10px;
   position: relative;
 }
 .DraftEditor-editorContainer, .search-2oPWTC .DraftEditor-root .public-DraftEditor-content, .search-2oPWTC .DraftEditor-root .public-DraftEditorPlaceholder-root, .searchBar-3dMhjb .icon-38sknP {
@@ -487,21 +475,8 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
 .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
   width: 222px;
 }
-.theme-light .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
-  width: 100%;
-  height: 40px;
-  overflow: hidden;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  background-color: #fff;
-}
-.theme-dark .searchBar-6Kv8R2 .searchBarComponent-32dTOx {
-  width: 100%;
-  height: 40px;
-  overflow: hidden;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  background-color: rgb(19, 17, 17);
+.theme-dark .container-1D34oG {
+  border-radius: 12px;
 }
 .platform-win .layer-3QrUeG {
   top: -100px;
@@ -701,6 +676,7 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
 }
   #app-mount .guilds-1SWlCJ [class*=expandedFolderBackground] {
     width: var(--server-size);
+    margin-left: -5px;
     left: 50%;
     border-radius: 10px;
     transform: translateX(-50%);
@@ -829,4 +805,11 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
 
 .contentRegionScroller-26nc1e, .sidebarRegionScroller-3MXcoP {
   margin-top: 50px;
+}
+
+.search-36MZv- {
+  margin: 0 0px;
+}
+.iconWrapper-2OrFZ1[aria-label="Help"] {
+  display: none;
 }
