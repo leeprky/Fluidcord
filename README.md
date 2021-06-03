@@ -17,7 +17,7 @@ cd powercord/src/Powercord/themes && git clone https://github.com/leeprky/Fluidc
 
 For **Betterdiscord** Users:
 
-CLick > [Download]()
+CLick > [Download](https://github.com/leeprky/Fluidcord/blob/main/support/bd/fluidcord.theme.css)
 
 
 For **Goosemod** Users:
