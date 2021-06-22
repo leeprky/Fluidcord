@@ -813,3 +813,5 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
 .iconWrapper-2OrFZ1[aria-label="Help"] {
   display: none;
 }
+
+:root {--version: "v0.4.3"; --outdated_fluidcord-42: none;}
