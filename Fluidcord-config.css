@@ -10,7 +10,7 @@
 @import url(https://leeprky.github.io/snippits/coolsniipitsforthemes.css);
 @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
-
+@import "https://leeprky.github.io/themes/Ovel/imports/07-extra/version.css";
 
 /*  ----------------------------
          GLASSCORD
@@ -814,4 +814,4 @@ div[class*=colorDefault-].focused-3afm-j,div[class*=colorDefault-].focused-3afm-
   display: none;
 }
 
-:root {--version: "v0.4.3"; --outdated_fluidcord-42: none;}
+:root {--version: "v0.4.3"; --build: "42";--outdated_fluidcord-42: none;}
