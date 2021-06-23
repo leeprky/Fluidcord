@@ -17,6 +17,7 @@
 @import url(https://leeprky.github.io/snippits/coolsniipitsforthemes.css);
 @import url(https://leeprky.github.io/themes/BaseStuff/alt-color.css);
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
+@import "https://leeprky.github.io/themes/Ovel/imports/07-extra/version.css";
 
 /*  ----------------------------
          GLASSCORD
@@ -47,7 +48,7 @@ body{
 /*  ----------------------------
        GLASSCORD SUPPORT
     ----------------------------  */
-
+:root {--version: "v0.4.3"; --build: "42";--outdated_fluidcord-42: none;}
 /*  ------------------------------------------
          Fluidcord Customisable Configuration
                     v0.4.2
