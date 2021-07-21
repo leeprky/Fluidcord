@@ -190,6 +190,7 @@ body{
 
   --alt-color: 114,137,218; /* RGB */
   --alt-color2: #6D84D1; /* HEX */
+  --alt-color3: 227; /* HSL */
   
   --modal-normal-primary-color: rgb(255, 255, 255);
   --modal-normal-secondary-color: var(--background-secondary);
